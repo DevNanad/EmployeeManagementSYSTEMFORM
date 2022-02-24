@@ -27,20 +27,30 @@ Partial Class EmployeeForm
         Me.HomeEMP = New System.Windows.Forms.TabPage()
         Me.lblHome = New System.Windows.Forms.Label()
         Me.updateEMP = New System.Windows.Forms.TabPage()
+        Me.txbLnameEMP = New System.Windows.Forms.TextBox()
+        Me.txbMnameEMP = New System.Windows.Forms.TextBox()
+        Me.btnUpdateFuncEMP = New System.Windows.Forms.Button()
+        Me.txbEmailEMP = New System.Windows.Forms.TextBox()
+        Me.txbStatusEMP = New System.Windows.Forms.TextBox()
+        Me.txbNumberEMP = New System.Windows.Forms.TextBox()
+        Me.txbAgeEMP = New System.Windows.Forms.TextBox()
+        Me.txbAddressEMP = New System.Windows.Forms.TextBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label33 = New System.Windows.Forms.Label()
+        Me.Label34 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txbFnameEMP = New System.Windows.Forms.TextBox()
         Me.ChangeEMP = New System.Windows.Forms.TabPage()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.txbNewPassword = New System.Windows.Forms.TextBox()
+        Me.txbNewPasswordemp = New System.Windows.Forms.TextBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnChangePass = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.txbNewUsername = New System.Windows.Forms.TextBox()
-        Me.txbidEdit = New System.Windows.Forms.TextBox()
+        Me.txbOldPassword = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.ApplyEMP = New System.Windows.Forms.TabPage()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -85,20 +95,6 @@ Partial Class EmployeeForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblDateemp = New System.Windows.Forms.Label()
         Me.emptimer = New System.Windows.Forms.Timer(Me.components)
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.txbAddressEMP = New System.Windows.Forms.TextBox()
-        Me.txbAgeEMP = New System.Windows.Forms.TextBox()
-        Me.txbNumberEMP = New System.Windows.Forms.TextBox()
-        Me.txbStatusEMP = New System.Windows.Forms.TextBox()
-        Me.txbEmailEMP = New System.Windows.Forms.TextBox()
-        Me.btnUpdateFuncEMP = New System.Windows.Forms.Button()
-        Me.txbMnameEMP = New System.Windows.Forms.TextBox()
-        Me.txbLnameEMP = New System.Windows.Forms.TextBox()
         Me.TabControl1.SuspendLayout()
         Me.HomeEMP.SuspendLayout()
         Me.updateEMP.SuspendLayout()
@@ -173,6 +169,182 @@ Partial Class EmployeeForm
         Me.updateEMP.TabIndex = 1
         Me.updateEMP.Text = "TabPage2"
         '
+        'txbLnameEMP
+        '
+        Me.txbLnameEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbLnameEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txbLnameEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbLnameEMP.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbLnameEMP.Location = New System.Drawing.Point(391, 163)
+        Me.txbLnameEMP.Multiline = True
+        Me.txbLnameEMP.Name = "txbLnameEMP"
+        Me.txbLnameEMP.Size = New System.Drawing.Size(110, 29)
+        Me.txbLnameEMP.TabIndex = 51
+        '
+        'txbMnameEMP
+        '
+        Me.txbMnameEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbMnameEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txbMnameEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbMnameEMP.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbMnameEMP.Location = New System.Drawing.Point(249, 163)
+        Me.txbMnameEMP.Multiline = True
+        Me.txbMnameEMP.Name = "txbMnameEMP"
+        Me.txbMnameEMP.Size = New System.Drawing.Size(110, 29)
+        Me.txbMnameEMP.TabIndex = 50
+        '
+        'btnUpdateFuncEMP
+        '
+        Me.btnUpdateFuncEMP.BackColor = System.Drawing.Color.Transparent
+        Me.btnUpdateFuncEMP.FlatAppearance.BorderSize = 2
+        Me.btnUpdateFuncEMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdateFuncEMP.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdateFuncEMP.ForeColor = System.Drawing.Color.FloralWhite
+        Me.btnUpdateFuncEMP.Location = New System.Drawing.Point(249, 409)
+        Me.btnUpdateFuncEMP.Name = "btnUpdateFuncEMP"
+        Me.btnUpdateFuncEMP.Size = New System.Drawing.Size(124, 45)
+        Me.btnUpdateFuncEMP.TabIndex = 49
+        Me.btnUpdateFuncEMP.Text = "UPDATE"
+        Me.btnUpdateFuncEMP.UseVisualStyleBackColor = False
+        '
+        'txbEmailEMP
+        '
+        Me.txbEmailEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbEmailEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txbEmailEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbEmailEMP.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbEmailEMP.Location = New System.Drawing.Point(379, 343)
+        Me.txbEmailEMP.Multiline = True
+        Me.txbEmailEMP.Name = "txbEmailEMP"
+        Me.txbEmailEMP.Size = New System.Drawing.Size(208, 29)
+        Me.txbEmailEMP.TabIndex = 48
+        '
+        'txbStatusEMP
+        '
+        Me.txbStatusEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbStatusEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txbStatusEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbStatusEMP.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbStatusEMP.Location = New System.Drawing.Point(379, 274)
+        Me.txbStatusEMP.Multiline = True
+        Me.txbStatusEMP.Name = "txbStatusEMP"
+        Me.txbStatusEMP.Size = New System.Drawing.Size(208, 29)
+        Me.txbStatusEMP.TabIndex = 47
+        '
+        'txbNumberEMP
+        '
+        Me.txbNumberEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbNumberEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txbNumberEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbNumberEMP.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbNumberEMP.Location = New System.Drawing.Point(132, 343)
+        Me.txbNumberEMP.Multiline = True
+        Me.txbNumberEMP.Name = "txbNumberEMP"
+        Me.txbNumberEMP.Size = New System.Drawing.Size(125, 29)
+        Me.txbNumberEMP.TabIndex = 46
+        '
+        'txbAgeEMP
+        '
+        Me.txbAgeEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbAgeEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txbAgeEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbAgeEMP.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbAgeEMP.Location = New System.Drawing.Point(132, 279)
+        Me.txbAgeEMP.Multiline = True
+        Me.txbAgeEMP.Name = "txbAgeEMP"
+        Me.txbAgeEMP.Size = New System.Drawing.Size(45, 29)
+        Me.txbAgeEMP.TabIndex = 45
+        '
+        'txbAddressEMP
+        '
+        Me.txbAddressEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbAddressEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txbAddressEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbAddressEMP.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbAddressEMP.Location = New System.Drawing.Point(132, 208)
+        Me.txbAddressEMP.Multiline = True
+        Me.txbAddressEMP.Name = "txbAddressEMP"
+        Me.txbAddressEMP.Size = New System.Drawing.Size(440, 29)
+        Me.txbAddressEMP.TabIndex = 44
+        '
+        'Label29
+        '
+        Me.Label29.BackColor = System.Drawing.Color.Transparent
+        Me.Label29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label29.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.ForeColor = System.Drawing.Color.White
+        Me.Label29.Location = New System.Drawing.Point(263, 341)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(110, 37)
+        Me.Label29.TabIndex = 43
+        Me.Label29.Text = "EMAIL ADDRESS"
+        Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label30
+        '
+        Me.Label30.BackColor = System.Drawing.Color.Transparent
+        Me.Label30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label30.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.ForeColor = System.Drawing.Color.White
+        Me.Label30.Location = New System.Drawing.Point(11, 341)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(110, 37)
+        Me.Label30.TabIndex = 42
+        Me.Label30.Text = "PHONE NUMBER"
+        Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label31
+        '
+        Me.Label31.BackColor = System.Drawing.Color.Transparent
+        Me.Label31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label31.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.ForeColor = System.Drawing.Color.White
+        Me.Label31.Location = New System.Drawing.Point(259, 271)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(114, 37)
+        Me.Label31.TabIndex = 41
+        Me.Label31.Text = "MARITAL STATUS"
+        Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label32
+        '
+        Me.Label32.BackColor = System.Drawing.Color.Transparent
+        Me.Label32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label32.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.ForeColor = System.Drawing.Color.White
+        Me.Label32.Location = New System.Drawing.Point(11, 271)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(43, 37)
+        Me.Label32.TabIndex = 40
+        Me.Label32.Text = "AGE"
+        Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label33
+        '
+        Me.Label33.BackColor = System.Drawing.Color.Transparent
+        Me.Label33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label33.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.ForeColor = System.Drawing.Color.White
+        Me.Label33.Location = New System.Drawing.Point(15, 210)
+        Me.Label33.Name = "Label33"
+        Me.Label33.Size = New System.Drawing.Size(71, 37)
+        Me.Label33.TabIndex = 39
+        Me.Label33.Text = "ADDRESS"
+        Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label34
+        '
+        Me.Label34.BackColor = System.Drawing.Color.Transparent
+        Me.Label34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label34.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label34.ForeColor = System.Drawing.Color.White
+        Me.Label34.Location = New System.Drawing.Point(18, 155)
+        Me.Label34.Name = "Label34"
+        Me.Label34.Size = New System.Drawing.Size(75, 37)
+        Me.Label34.TabIndex = 38
+        Me.Label34.Text = "FULLNAME"
+        Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.Color.Transparent
@@ -202,17 +374,13 @@ Partial Class EmployeeForm
         '
         Me.ChangeEMP.BackgroundImage = Global.EmployeeManagementSYSTEM.My.Resources.Resources.rec
         Me.ChangeEMP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ChangeEMP.Controls.Add(Me.Panel6)
-        Me.ChangeEMP.Controls.Add(Me.Button2)
-        Me.ChangeEMP.Controls.Add(Me.txbNewPassword)
+        Me.ChangeEMP.Controls.Add(Me.txbNewPasswordemp)
         Me.ChangeEMP.Controls.Add(Me.Panel5)
-        Me.ChangeEMP.Controls.Add(Me.Button1)
+        Me.ChangeEMP.Controls.Add(Me.btnChangePass)
         Me.ChangeEMP.Controls.Add(Me.Panel4)
-        Me.ChangeEMP.Controls.Add(Me.txbNewUsername)
-        Me.ChangeEMP.Controls.Add(Me.txbidEdit)
+        Me.ChangeEMP.Controls.Add(Me.txbOldPassword)
         Me.ChangeEMP.Controls.Add(Me.Label14)
         Me.ChangeEMP.Controls.Add(Me.Label15)
-        Me.ChangeEMP.Controls.Add(Me.Label16)
         Me.ChangeEMP.Controls.Add(Me.Label13)
         Me.ChangeEMP.Location = New System.Drawing.Point(4, 22)
         Me.ChangeEMP.Name = "ChangeEMP"
@@ -221,96 +389,61 @@ Partial Class EmployeeForm
         Me.ChangeEMP.Text = "TabPage1"
         Me.ChangeEMP.UseVisualStyleBackColor = True
         '
-        'Panel6
+        'txbNewPasswordemp
         '
-        Me.Panel6.BackColor = System.Drawing.Color.White
-        Me.Panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel6.Location = New System.Drawing.Point(267, 170)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(139, 3)
-        Me.Panel6.TabIndex = 22
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.FlatAppearance.BorderSize = 2
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.LightYellow
-        Me.Button2.Location = New System.Drawing.Point(446, 139)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(68, 30)
-        Me.Button2.TabIndex = 23
-        Me.Button2.Text = "Check"
-        Me.Button2.UseVisualStyleBackColor = False
-        '
-        'txbNewPassword
-        '
-        Me.txbNewPassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbNewPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbNewPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbNewPassword.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbNewPassword.Location = New System.Drawing.Point(264, 287)
-        Me.txbNewPassword.Multiline = True
-        Me.txbNewPassword.Name = "txbNewPassword"
-        Me.txbNewPassword.Size = New System.Drawing.Size(176, 27)
-        Me.txbNewPassword.TabIndex = 22
+        Me.txbNewPasswordemp.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbNewPasswordemp.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txbNewPasswordemp.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbNewPasswordemp.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbNewPasswordemp.Location = New System.Drawing.Point(237, 241)
+        Me.txbNewPasswordemp.Multiline = True
+        Me.txbNewPasswordemp.Name = "txbNewPasswordemp"
+        Me.txbNewPasswordemp.Size = New System.Drawing.Size(176, 27)
+        Me.txbNewPasswordemp.TabIndex = 22
         '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.White
         Me.Panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel5.Location = New System.Drawing.Point(266, 315)
+        Me.Panel5.Location = New System.Drawing.Point(239, 269)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(176, 3)
         Me.Panel5.TabIndex = 21
         '
-        'Button1
+        'btnChangePass
         '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.FlatAppearance.BorderSize = 2
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FloralWhite
-        Me.Button1.Location = New System.Drawing.Point(237, 382)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(124, 45)
-        Me.Button1.TabIndex = 21
-        Me.Button1.Text = "EDIT"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnChangePass.BackColor = System.Drawing.Color.Transparent
+        Me.btnChangePass.FlatAppearance.BorderSize = 2
+        Me.btnChangePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnChangePass.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnChangePass.ForeColor = System.Drawing.Color.FloralWhite
+        Me.btnChangePass.Location = New System.Drawing.Point(237, 382)
+        Me.btnChangePass.Name = "btnChangePass"
+        Me.btnChangePass.Size = New System.Drawing.Size(124, 45)
+        Me.btnChangePass.TabIndex = 21
+        Me.btnChangePass.Text = "CHANGE"
+        Me.btnChangePass.UseVisualStyleBackColor = False
         '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.White
         Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel4.Location = New System.Drawing.Point(266, 253)
+        Me.Panel4.Location = New System.Drawing.Point(239, 207)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(176, 3)
         Me.Panel4.TabIndex = 20
         '
-        'txbNewUsername
+        'txbOldPassword
         '
-        Me.txbNewUsername.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbNewUsername.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbNewUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbNewUsername.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbNewUsername.Location = New System.Drawing.Point(264, 226)
-        Me.txbNewUsername.Multiline = True
-        Me.txbNewUsername.Name = "txbNewUsername"
-        Me.txbNewUsername.Size = New System.Drawing.Size(176, 27)
-        Me.txbNewUsername.TabIndex = 19
-        '
-        'txbidEdit
-        '
-        Me.txbidEdit.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbidEdit.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbidEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbidEdit.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbidEdit.Location = New System.Drawing.Point(266, 141)
-        Me.txbidEdit.Multiline = True
-        Me.txbidEdit.Name = "txbidEdit"
-        Me.txbidEdit.Size = New System.Drawing.Size(135, 28)
-        Me.txbidEdit.TabIndex = 18
+        Me.txbOldPassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbOldPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txbOldPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbOldPassword.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbOldPassword.Location = New System.Drawing.Point(237, 180)
+        Me.txbOldPassword.Multiline = True
+        Me.txbOldPassword.Name = "txbOldPassword"
+        Me.txbOldPassword.Size = New System.Drawing.Size(176, 27)
+        Me.txbOldPassword.TabIndex = 19
         '
         'Label14
         '
@@ -318,7 +451,7 @@ Partial Class EmployeeForm
         Me.Label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label14.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(58, 294)
+        Me.Label14.Location = New System.Drawing.Point(31, 248)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(164, 37)
         Me.Label14.TabIndex = 17
@@ -331,25 +464,12 @@ Partial Class EmployeeForm
         Me.Label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label15.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(58, 222)
+        Me.Label15.Location = New System.Drawing.Point(31, 176)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(161, 37)
         Me.Label15.TabIndex = 16
-        Me.Label15.Text = "NEW USERNAME"
+        Me.Label15.Text = "OLD PASSWORD"
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label16
-        '
-        Me.Label16.BackColor = System.Drawing.Color.Transparent
-        Me.Label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label16.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(58, 127)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(49, 37)
-        Me.Label16.TabIndex = 15
-        Me.Label16.Text = "ID"
-        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label13
         '
@@ -357,11 +477,11 @@ Partial Class EmployeeForm
         Me.Label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label13.Font = New System.Drawing.Font("Arial Rounded MT Bold", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(148, 16)
+        Me.Label13.Location = New System.Drawing.Point(128, 17)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(299, 55)
+        Me.Label13.Size = New System.Drawing.Size(344, 55)
         Me.Label13.TabIndex = 14
-        Me.Label13.Text = "EDIT EMPLOYEE"
+        Me.Label13.Text = "CHANGE PASSWORD"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ApplyEMP
@@ -919,182 +1039,6 @@ Partial Class EmployeeForm
         'emptimer
         '
         '
-        'Label29
-        '
-        Me.Label29.BackColor = System.Drawing.Color.Transparent
-        Me.Label29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label29.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.ForeColor = System.Drawing.Color.White
-        Me.Label29.Location = New System.Drawing.Point(263, 341)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(110, 37)
-        Me.Label29.TabIndex = 43
-        Me.Label29.Text = "EMAIL ADDRESS"
-        Me.Label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label30
-        '
-        Me.Label30.BackColor = System.Drawing.Color.Transparent
-        Me.Label30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label30.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.ForeColor = System.Drawing.Color.White
-        Me.Label30.Location = New System.Drawing.Point(11, 341)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(110, 37)
-        Me.Label30.TabIndex = 42
-        Me.Label30.Text = "PHONE NUMBER"
-        Me.Label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label31
-        '
-        Me.Label31.BackColor = System.Drawing.Color.Transparent
-        Me.Label31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label31.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.ForeColor = System.Drawing.Color.White
-        Me.Label31.Location = New System.Drawing.Point(259, 271)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(114, 37)
-        Me.Label31.TabIndex = 41
-        Me.Label31.Text = "MARITAL STATUS"
-        Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label32
-        '
-        Me.Label32.BackColor = System.Drawing.Color.Transparent
-        Me.Label32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label32.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.ForeColor = System.Drawing.Color.White
-        Me.Label32.Location = New System.Drawing.Point(11, 271)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(43, 37)
-        Me.Label32.TabIndex = 40
-        Me.Label32.Text = "AGE"
-        Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label33
-        '
-        Me.Label33.BackColor = System.Drawing.Color.Transparent
-        Me.Label33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label33.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label33.ForeColor = System.Drawing.Color.White
-        Me.Label33.Location = New System.Drawing.Point(15, 210)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(71, 37)
-        Me.Label33.TabIndex = 39
-        Me.Label33.Text = "ADDRESS"
-        Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label34
-        '
-        Me.Label34.BackColor = System.Drawing.Color.Transparent
-        Me.Label34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label34.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.ForeColor = System.Drawing.Color.White
-        Me.Label34.Location = New System.Drawing.Point(18, 155)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(75, 37)
-        Me.Label34.TabIndex = 38
-        Me.Label34.Text = "FULLNAME"
-        Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'txbAddressEMP
-        '
-        Me.txbAddressEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbAddressEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbAddressEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbAddressEMP.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbAddressEMP.Location = New System.Drawing.Point(132, 208)
-        Me.txbAddressEMP.Multiline = True
-        Me.txbAddressEMP.Name = "txbAddressEMP"
-        Me.txbAddressEMP.Size = New System.Drawing.Size(440, 29)
-        Me.txbAddressEMP.TabIndex = 44
-        '
-        'txbAgeEMP
-        '
-        Me.txbAgeEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbAgeEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbAgeEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbAgeEMP.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbAgeEMP.Location = New System.Drawing.Point(132, 279)
-        Me.txbAgeEMP.Multiline = True
-        Me.txbAgeEMP.Name = "txbAgeEMP"
-        Me.txbAgeEMP.Size = New System.Drawing.Size(45, 29)
-        Me.txbAgeEMP.TabIndex = 45
-        '
-        'txbNumberEMP
-        '
-        Me.txbNumberEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbNumberEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbNumberEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbNumberEMP.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbNumberEMP.Location = New System.Drawing.Point(132, 343)
-        Me.txbNumberEMP.Multiline = True
-        Me.txbNumberEMP.Name = "txbNumberEMP"
-        Me.txbNumberEMP.Size = New System.Drawing.Size(125, 29)
-        Me.txbNumberEMP.TabIndex = 46
-        '
-        'txbStatusEMP
-        '
-        Me.txbStatusEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbStatusEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbStatusEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbStatusEMP.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbStatusEMP.Location = New System.Drawing.Point(379, 274)
-        Me.txbStatusEMP.Multiline = True
-        Me.txbStatusEMP.Name = "txbStatusEMP"
-        Me.txbStatusEMP.Size = New System.Drawing.Size(208, 29)
-        Me.txbStatusEMP.TabIndex = 47
-        '
-        'txbEmailEMP
-        '
-        Me.txbEmailEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbEmailEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbEmailEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbEmailEMP.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbEmailEMP.Location = New System.Drawing.Point(379, 343)
-        Me.txbEmailEMP.Multiline = True
-        Me.txbEmailEMP.Name = "txbEmailEMP"
-        Me.txbEmailEMP.Size = New System.Drawing.Size(208, 29)
-        Me.txbEmailEMP.TabIndex = 48
-        '
-        'btnUpdateFuncEMP
-        '
-        Me.btnUpdateFuncEMP.BackColor = System.Drawing.Color.Transparent
-        Me.btnUpdateFuncEMP.FlatAppearance.BorderSize = 2
-        Me.btnUpdateFuncEMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUpdateFuncEMP.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUpdateFuncEMP.ForeColor = System.Drawing.Color.FloralWhite
-        Me.btnUpdateFuncEMP.Location = New System.Drawing.Point(249, 409)
-        Me.btnUpdateFuncEMP.Name = "btnUpdateFuncEMP"
-        Me.btnUpdateFuncEMP.Size = New System.Drawing.Size(124, 45)
-        Me.btnUpdateFuncEMP.TabIndex = 49
-        Me.btnUpdateFuncEMP.Text = "UPDATE"
-        Me.btnUpdateFuncEMP.UseVisualStyleBackColor = False
-        '
-        'txbMnameEMP
-        '
-        Me.txbMnameEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbMnameEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbMnameEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbMnameEMP.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbMnameEMP.Location = New System.Drawing.Point(249, 163)
-        Me.txbMnameEMP.Multiline = True
-        Me.txbMnameEMP.Name = "txbMnameEMP"
-        Me.txbMnameEMP.Size = New System.Drawing.Size(110, 29)
-        Me.txbMnameEMP.TabIndex = 50
-        '
-        'txbLnameEMP
-        '
-        Me.txbLnameEMP.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbLnameEMP.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbLnameEMP.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbLnameEMP.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbLnameEMP.Location = New System.Drawing.Point(391, 163)
-        Me.txbLnameEMP.Multiline = True
-        Me.txbLnameEMP.Name = "txbLnameEMP"
-        Me.txbLnameEMP.Size = New System.Drawing.Size(110, 29)
-        Me.txbLnameEMP.TabIndex = 51
-        '
         'EmployeeForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1149,17 +1093,13 @@ Partial Class EmployeeForm
     Friend WithEvents Label7 As Label
     Friend WithEvents txbFnameEMP As TextBox
     Friend WithEvents ChangeEMP As TabPage
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents Button2 As Button
-    Friend WithEvents txbNewPassword As TextBox
+    Friend WithEvents txbNewPasswordemp As TextBox
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnChangePass As Button
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents txbNewUsername As TextBox
-    Friend WithEvents txbidEdit As TextBox
+    Friend WithEvents txbOldPassword As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents Label16 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents ApplyEMP As TabPage
     Friend WithEvents Button3 As Button

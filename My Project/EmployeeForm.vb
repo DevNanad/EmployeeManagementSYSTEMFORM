@@ -116,6 +116,55 @@ Public Class EmployeeForm
 
         Catch ex As Exception
             MsgBox("Error in update second try : " & ex.Message)
+
         End Try
+    End Sub
+
+    Private Sub btnChangePass_Click(sender As Object, e As EventArgs) Handles btnChangePass.Click
+        If txbOldPassword.Text = "" Then
+            MsgBox("Old Password Should not be empty!")
+        Else
+            Try
+                MyConnection.Open()
+                MySQL = "SELECT * FROM [emp] WHERE [Upassword]=@P AND [UserID]=@N"
+                MyCommand = New OleDbCommand(MySQL, MyConnection)
+                MyCommand.CommandType = CommandType.Text
+                MyCommand.Parameters.AddWithValue("@P", txbOldPassword.Text.ToString)
+                MyCommand.Parameters.AddWithValue("@N", realID)
+                sdr = MyCommand.ExecuteReader
+
+                If sdr.Read Then
+                    Try
+                        MySQL = "UPDATE [emp] SET [Upassword]=? where UserID=?"
+                        MyCommand = New OleDbCommand(MySQL, MyConnection)
+                        'MyConnection.Open()
+                        MyCommand.Parameters.AddWithValue("?", txbNewPasswordemp.Text.ToString)
+                        MyCommand.Parameters.AddWithValue("?", realID)
+                        MyCommand.ExecuteNonQuery()
+
+                        MyConnection.Close()
+                        MsgBox("Password UPDATED :)")
+
+                        txbOldPassword.Text = ""
+                        txbNewPasswordemp.Text = ""
+
+
+                    Catch ex As Exception
+                        MsgBox("Error in 2nd update password:" & ex.Message)
+                        MyConnection.Close()
+                    End Try
+                Else
+                    MsgBox("Password does not Match the record :)")
+                    MyConnection.Close()
+                End If
+
+                MyConnection.Close()
+
+            Catch ex As Exception
+                MsgBox("Error in 1st update password:" & ex.Message)
+                MyConnection.Close()
+            End Try
+        End If
+
     End Sub
 End Class
