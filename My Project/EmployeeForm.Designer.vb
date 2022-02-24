@@ -53,22 +53,6 @@ Partial Class EmployeeForm
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.ApplyEMP = New System.Windows.Forms.TabPage()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.fetchemail = New System.Windows.Forms.Label()
-        Me.fetchstatus = New System.Windows.Forms.Label()
-        Me.fetchphone = New System.Windows.Forms.Label()
-        Me.fetchage = New System.Windows.Forms.Label()
-        Me.fetchaddress = New System.Windows.Forms.Label()
-        Me.fetchfullname = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.txbSearch = New System.Windows.Forms.TextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.ViewEMP = New System.Windows.Forms.TabPage()
         Me.btnDeleteAdmin = New System.Windows.Forms.Button()
@@ -95,6 +79,14 @@ Partial Class EmployeeForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblDateemp = New System.Windows.Forms.Label()
         Me.emptimer = New System.Windows.Forms.Timer(Me.components)
+        Me.txbPlanLeave = New System.Windows.Forms.TextBox()
+        Me.btnApply = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.txbDaysLeave = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txbReasonLeave = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.HomeEMP.SuspendLayout()
         Me.updateEMP.SuspendLayout()
@@ -488,22 +480,14 @@ Partial Class EmployeeForm
         '
         Me.ApplyEMP.BackgroundImage = Global.EmployeeManagementSYSTEM.My.Resources.Resources.rec
         Me.ApplyEMP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ApplyEMP.Controls.Add(Me.Button3)
-        Me.ApplyEMP.Controls.Add(Me.fetchemail)
-        Me.ApplyEMP.Controls.Add(Me.fetchstatus)
-        Me.ApplyEMP.Controls.Add(Me.fetchphone)
-        Me.ApplyEMP.Controls.Add(Me.fetchage)
-        Me.ApplyEMP.Controls.Add(Me.fetchaddress)
-        Me.ApplyEMP.Controls.Add(Me.fetchfullname)
-        Me.ApplyEMP.Controls.Add(Me.Label24)
-        Me.ApplyEMP.Controls.Add(Me.Label23)
-        Me.ApplyEMP.Controls.Add(Me.Label22)
-        Me.ApplyEMP.Controls.Add(Me.Label21)
-        Me.ApplyEMP.Controls.Add(Me.Label20)
-        Me.ApplyEMP.Controls.Add(Me.Label19)
-        Me.ApplyEMP.Controls.Add(Me.Panel7)
-        Me.ApplyEMP.Controls.Add(Me.txbSearch)
-        Me.ApplyEMP.Controls.Add(Me.Label18)
+        Me.ApplyEMP.Controls.Add(Me.txbReasonLeave)
+        Me.ApplyEMP.Controls.Add(Me.Label5)
+        Me.ApplyEMP.Controls.Add(Me.txbPlanLeave)
+        Me.ApplyEMP.Controls.Add(Me.btnApply)
+        Me.ApplyEMP.Controls.Add(Me.Panel2)
+        Me.ApplyEMP.Controls.Add(Me.txbDaysLeave)
+        Me.ApplyEMP.Controls.Add(Me.Label3)
+        Me.ApplyEMP.Controls.Add(Me.Label4)
         Me.ApplyEMP.Controls.Add(Me.Label17)
         Me.ApplyEMP.Location = New System.Drawing.Point(4, 22)
         Me.ApplyEMP.Name = "ApplyEMP"
@@ -511,203 +495,6 @@ Partial Class EmployeeForm
         Me.ApplyEMP.TabIndex = 3
         Me.ApplyEMP.Text = "TabPage1"
         Me.ApplyEMP.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(247, 76)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(59, 33)
-        Me.Button3.TabIndex = 38
-        Me.Button3.Text = "Search"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'fetchemail
-        '
-        Me.fetchemail.BackColor = System.Drawing.Color.Transparent
-        Me.fetchemail.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.fetchemail.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fetchemail.ForeColor = System.Drawing.Color.White
-        Me.fetchemail.Location = New System.Drawing.Point(402, 371)
-        Me.fetchemail.Name = "fetchemail"
-        Me.fetchemail.Size = New System.Drawing.Size(160, 37)
-        Me.fetchemail.TabIndex = 37
-        Me.fetchemail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'fetchstatus
-        '
-        Me.fetchstatus.BackColor = System.Drawing.Color.Transparent
-        Me.fetchstatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.fetchstatus.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fetchstatus.ForeColor = System.Drawing.Color.White
-        Me.fetchstatus.Location = New System.Drawing.Point(402, 304)
-        Me.fetchstatus.Name = "fetchstatus"
-        Me.fetchstatus.Size = New System.Drawing.Size(160, 37)
-        Me.fetchstatus.TabIndex = 36
-        Me.fetchstatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'fetchphone
-        '
-        Me.fetchphone.BackColor = System.Drawing.Color.Transparent
-        Me.fetchphone.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.fetchphone.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fetchphone.ForeColor = System.Drawing.Color.White
-        Me.fetchphone.Location = New System.Drawing.Point(146, 374)
-        Me.fetchphone.Name = "fetchphone"
-        Me.fetchphone.Size = New System.Drawing.Size(130, 37)
-        Me.fetchphone.TabIndex = 35
-        Me.fetchphone.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'fetchage
-        '
-        Me.fetchage.BackColor = System.Drawing.Color.Transparent
-        Me.fetchage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.fetchage.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fetchage.ForeColor = System.Drawing.Color.White
-        Me.fetchage.Location = New System.Drawing.Point(148, 304)
-        Me.fetchage.Name = "fetchage"
-        Me.fetchage.Size = New System.Drawing.Size(65, 37)
-        Me.fetchage.TabIndex = 34
-        Me.fetchage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'fetchaddress
-        '
-        Me.fetchaddress.BackColor = System.Drawing.Color.Transparent
-        Me.fetchaddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.fetchaddress.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fetchaddress.ForeColor = System.Drawing.Color.White
-        Me.fetchaddress.Location = New System.Drawing.Point(148, 243)
-        Me.fetchaddress.Name = "fetchaddress"
-        Me.fetchaddress.Size = New System.Drawing.Size(439, 37)
-        Me.fetchaddress.TabIndex = 33
-        Me.fetchaddress.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'fetchfullname
-        '
-        Me.fetchfullname.BackColor = System.Drawing.Color.Transparent
-        Me.fetchfullname.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.fetchfullname.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fetchfullname.ForeColor = System.Drawing.Color.White
-        Me.fetchfullname.Location = New System.Drawing.Point(148, 188)
-        Me.fetchfullname.Name = "fetchfullname"
-        Me.fetchfullname.Size = New System.Drawing.Size(439, 37)
-        Me.fetchfullname.TabIndex = 32
-        Me.fetchfullname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label24
-        '
-        Me.Label24.BackColor = System.Drawing.Color.Transparent
-        Me.Label24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label24.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.ForeColor = System.Drawing.Color.White
-        Me.Label24.Location = New System.Drawing.Point(282, 374)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(110, 37)
-        Me.Label24.TabIndex = 31
-        Me.Label24.Text = "EMAIL ADDRESS"
-        Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label23
-        '
-        Me.Label23.BackColor = System.Drawing.Color.Transparent
-        Me.Label23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label23.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.ForeColor = System.Drawing.Color.White
-        Me.Label23.Location = New System.Drawing.Point(30, 374)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(110, 37)
-        Me.Label23.TabIndex = 30
-        Me.Label23.Text = "PHONE NUMBER"
-        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label22
-        '
-        Me.Label22.BackColor = System.Drawing.Color.Transparent
-        Me.Label22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label22.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.ForeColor = System.Drawing.Color.White
-        Me.Label22.Location = New System.Drawing.Point(278, 304)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(114, 37)
-        Me.Label22.TabIndex = 29
-        Me.Label22.Text = "MARITAL STATUS"
-        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label21
-        '
-        Me.Label21.BackColor = System.Drawing.Color.Transparent
-        Me.Label21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label21.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.ForeColor = System.Drawing.Color.White
-        Me.Label21.Location = New System.Drawing.Point(30, 304)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(43, 37)
-        Me.Label21.TabIndex = 28
-        Me.Label21.Text = "AGE"
-        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label20
-        '
-        Me.Label20.BackColor = System.Drawing.Color.Transparent
-        Me.Label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label20.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(34, 243)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(71, 37)
-        Me.Label20.TabIndex = 27
-        Me.Label20.Text = "ADDRESS"
-        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label19
-        '
-        Me.Label19.BackColor = System.Drawing.Color.Transparent
-        Me.Label19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label19.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(37, 188)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(75, 37)
-        Me.Label19.TabIndex = 26
-        Me.Label19.Text = "FULLNAME"
-        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel7
-        '
-        Me.Panel7.BackColor = System.Drawing.Color.White
-        Me.Panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel7.Location = New System.Drawing.Point(102, 101)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(139, 3)
-        Me.Panel7.TabIndex = 25
-        '
-        'txbSearch
-        '
-        Me.txbSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbSearch.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbSearch.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbSearch.Location = New System.Drawing.Point(106, 76)
-        Me.txbSearch.Multiline = True
-        Me.txbSearch.Name = "txbSearch"
-        Me.txbSearch.Size = New System.Drawing.Size(135, 28)
-        Me.txbSearch.TabIndex = 24
-        '
-        'Label18
-        '
-        Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label18.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(37, 76)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(49, 37)
-        Me.Label18.TabIndex = 23
-        Me.Label18.Text = "ID"
-        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label17
         '
@@ -719,7 +506,7 @@ Partial Class EmployeeForm
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(299, 55)
         Me.Label17.TabIndex = 15
-        Me.Label17.Text = "SEARCH PEOPLE"
+        Me.Label17.Text = "APPLY LEAVE"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ViewEMP
@@ -1039,6 +826,104 @@ Partial Class EmployeeForm
         'emptimer
         '
         '
+        'txbPlanLeave
+        '
+        Me.txbPlanLeave.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbPlanLeave.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txbPlanLeave.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbPlanLeave.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbPlanLeave.Location = New System.Drawing.Point(257, 289)
+        Me.txbPlanLeave.Multiline = True
+        Me.txbPlanLeave.Name = "txbPlanLeave"
+        Me.txbPlanLeave.Size = New System.Drawing.Size(230, 73)
+        Me.txbPlanLeave.TabIndex = 29
+        '
+        'btnApply
+        '
+        Me.btnApply.BackColor = System.Drawing.Color.Transparent
+        Me.btnApply.FlatAppearance.BorderSize = 2
+        Me.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnApply.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnApply.ForeColor = System.Drawing.Color.FloralWhite
+        Me.btnApply.Location = New System.Drawing.Point(237, 404)
+        Me.btnApply.Name = "btnApply"
+        Me.btnApply.Size = New System.Drawing.Size(124, 45)
+        Me.btnApply.TabIndex = 28
+        Me.btnApply.Text = "APPLY"
+        Me.btnApply.UseVisualStyleBackColor = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Panel2.Location = New System.Drawing.Point(259, 255)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(123, 3)
+        Me.Panel2.TabIndex = 26
+        '
+        'txbDaysLeave
+        '
+        Me.txbDaysLeave.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbDaysLeave.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txbDaysLeave.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbDaysLeave.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbDaysLeave.Location = New System.Drawing.Point(257, 228)
+        Me.txbDaysLeave.Multiline = True
+        Me.txbDaysLeave.Name = "txbDaysLeave"
+        Me.txbDaysLeave.Size = New System.Drawing.Size(123, 27)
+        Me.txbDaysLeave.TabIndex = 25
+        '
+        'Label3
+        '
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(51, 296)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(164, 37)
+        Me.Label3.TabIndex = 24
+        Me.Label3.Text = "Current work plan"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label4.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(43, 224)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(161, 37)
+        Me.Label4.TabIndex = 23
+        Me.Label4.Text = "How many days"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txbReasonLeave
+        '
+        Me.txbReasonLeave.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbReasonLeave.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txbReasonLeave.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbReasonLeave.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbReasonLeave.Location = New System.Drawing.Point(257, 146)
+        Me.txbReasonLeave.Multiline = True
+        Me.txbReasonLeave.Name = "txbReasonLeave"
+        Me.txbReasonLeave.Size = New System.Drawing.Size(230, 62)
+        Me.txbReasonLeave.TabIndex = 31
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(51, 142)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(161, 37)
+        Me.Label5.TabIndex = 30
+        Me.Label5.Text = "Reason for leave"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'EmployeeForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1102,22 +987,6 @@ Partial Class EmployeeForm
     Friend WithEvents Label15 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents ApplyEMP As TabPage
-    Friend WithEvents Button3 As Button
-    Friend WithEvents fetchemail As Label
-    Friend WithEvents fetchstatus As Label
-    Friend WithEvents fetchphone As Label
-    Friend WithEvents fetchage As Label
-    Friend WithEvents fetchaddress As Label
-    Friend WithEvents fetchfullname As Label
-    Friend WithEvents Label24 As Label
-    Friend WithEvents Label23 As Label
-    Friend WithEvents Label22 As Label
-    Friend WithEvents Label21 As Label
-    Friend WithEvents Label20 As Label
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Panel7 As Panel
-    Friend WithEvents txbSearch As TextBox
-    Friend WithEvents Label18 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents ViewEMP As TabPage
     Friend WithEvents btnDeleteAdmin As Button
@@ -1158,4 +1027,12 @@ Partial Class EmployeeForm
     Friend WithEvents btnUpdateFuncEMP As Button
     Friend WithEvents txbLnameEMP As TextBox
     Friend WithEvents txbMnameEMP As TextBox
+    Friend WithEvents txbReasonLeave As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txbPlanLeave As TextBox
+    Friend WithEvents btnApply As Button
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents txbDaysLeave As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class

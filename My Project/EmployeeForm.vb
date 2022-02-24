@@ -167,4 +167,33 @@ Public Class EmployeeForm
         End If
 
     End Sub
+
+    Private Sub btnApply_Click(sender As Object, e As EventArgs) Handles btnApply.Click
+        If txbPlanLeave.Text = "" OrElse txbDaysLeave.Text = "" OrElse txbPlanLeave.Text = "" Then
+            MsgBox("Fields Should be empty! ")
+        Else
+            Try
+                Dim leavedate As Date = Format(Now, "dddd,d MMM yyyy")
+                MySQL = "INSERT INTO [leave] ([Leave_ID],[Reason],[Days],[Workplan],[Leave_date]) " &
+                "VALUES (?,?,?,?,?)"
+                MyConnection = New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=empDB.mdb")
+                MyCommand = New OleDbCommand(MySQL, MyConnection)
+                MyConnection.Open()
+                MyCommand.Parameters.AddWithValue("?", realID)
+                MyCommand.Parameters.AddWithValue("?", txbReasonLeave.Text.ToString)
+                MyCommand.Parameters.AddWithValue("?", txbDaysLeave.Text.ToString)
+                MyCommand.Parameters.AddWithValue("?", txbPlanLeave.Text.ToString)
+                MyCommand.Parameters.AddWithValue("?", leavedate)
+                MyCommand.ExecuteNonQuery()
+
+                MyConnection.Close()
+
+                MsgBox("Succesful application")
+
+
+            Catch ex As Exception
+                MsgBox("Error in application : " & ex.Message)
+            End Try
+        End If
+    End Sub
 End Class
