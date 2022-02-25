@@ -5,7 +5,6 @@ Public Class AdminForm
     Public MySQL As String
     Public MyCommand As New OleDbCommand
     Public sdr As OleDbDataReader
-
     Public da As New OleDbDataAdapter
     Public dataset As New DataSet
 
@@ -14,12 +13,11 @@ Public Class AdminForm
 
     'FORM LOAD
     Private Sub AdminForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim adminclass As New Adminclass
         Dim fullname As String = Nothing
         Dim adminsalary As Integer
 
         currentAdmin.Text = "ADMIN ID: " & realID
-        adminclass.Fetch(realID, fullname, adminsalary)
+        Fetch(realID, fullname, adminsalary)
         currentSalary.Text = adminsalary.ToString("Php ###,###,###.00")
         currentName.Text = fullname
         Timer1.Enabled = True
@@ -33,7 +31,7 @@ Public Class AdminForm
         End Try
 
         'fire fetch dgv fetch function
-        adminclass.DgvFetch(dgv)
+        DgvFetch(dgv)
 
 
 
@@ -41,10 +39,50 @@ Public Class AdminForm
     End Sub
 
 
+    'FETCH ADMIN INFORMATION
+    Public Sub Fetch(ByVal id, ByRef fullname, ByRef adminsalary)
+        Try
+            MyConnection.Open()
+            MySQL = "SELECT * FROM [emp] WHERE UserID = @N"
+            MyCommand = New OleDbCommand(MySQL, MyConnection)
+            MyCommand.CommandType = CommandType.Text
+            MyCommand.Parameters.AddWithValue("@N", CInt(id))
+            sdr = MyCommand.ExecuteReader
+
+
+            If sdr.Read Then
+                fullname = sdr("Fname") & " " & sdr("Lname")
+                adminsalary = sdr("salary")
+            Else
+
+            End If
+
+        Catch ex As Exception
+            MsgBox("Login Error " & ex.Message)
+
+        End Try
+    End Sub
+
+
+    'Data Grid View Table
+    Public Function DgvFetch(ByVal dgv)
+        Try
+            da = New OleDbDataAdapter("Select * from emp", MyConnection)
+            dataset = New DataSet
+            da.Fill(dataset, "emp")
+            dgv.DataSource = dataset.Tables("emp").DefaultView
+
+
+        Catch ex As Exception
+            MsgBox("Dgv error" & ex.Message)
+        End Try
+        Return True
+    End Function
+
+
     'BTN ACTIONS
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles btnDashboard.Click, btnCreate.Click, btnEdit.Click, btnSearch.Click, btnDelete.Click
-        Dim adminclass As New Adminclass
-        adminclass.DgvFetch(dgv)
+        DgvFetch(dgv)
         Try
             Dim mybtn = DirectCast(sender, Button)
 
@@ -76,7 +114,6 @@ Public Class AdminForm
 
     'CREATE BUTTTON FUNCTION
     Private Sub btnCreateNEW_Click(sender As Object, e As EventArgs) Handles btnCreateNEW.Click
-        Dim adminclass As New Adminclass
         Dim createid As Integer
 
 
@@ -302,6 +339,7 @@ Public Class AdminForm
         End If
     End Sub
 
+    'Delete btn
     Private Sub btnDeleteAdmin_Click(sender As Object, e As EventArgs) Handles btnDeleteAdmin.Click
 
 
@@ -330,8 +368,7 @@ Public Class AdminForm
                         MyCommand.ExecuteNonQuery()
 
                         'fire fetch dgv fetch function
-                        Dim adminclass As New Adminclass
-                        adminclass.DgvFetch(dgv)
+                        DgvFetch(dgv)
                         MsgBox("Account DELETED :)")
                         MyConnection.Close()
                     Catch ex As Exception
@@ -354,52 +391,13 @@ Public Class AdminForm
 
     End Sub
 
-End Class
-
-
-
-
-Public Class Adminclass
-    Inherits AdminForm
-
-
-    'FETCH ADMIN INFORMATION
-    Public Sub Fetch(ByVal id, ByRef fullname, ByRef adminsalary)
-        Try
-            MyConnection.Open()
-            MySQL = "SELECT * FROM [emp] WHERE UserID = @N"
-            MyCommand = New OleDbCommand(MySQL, MyConnection)
-            MyCommand.CommandType = CommandType.Text
-            MyCommand.Parameters.AddWithValue("@N", CInt(id))
-            sdr = MyCommand.ExecuteReader
-
-
-            If sdr.Read Then
-                fullname = sdr("Fname") & " " & sdr("Lname")
-                adminsalary = sdr("salary")
-            Else
-
-            End If
-
-        Catch ex As Exception
-            MsgBox("Login Error " & ex.Message)
-
-        End Try
+    'close btn
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+        Me.Close()
     End Sub
-
-
-
-    Public Function DgvFetch(ByVal dgv)
-        Try
-            da = New OleDbDataAdapter("Select * from emp", MyConnection)
-            dataset = New DataSet
-            da.Fill(dataset, "emp")
-            dgv.DataSource = dataset.Tables("emp").DefaultView
-
-
-        Catch ex As Exception
-            MsgBox("Dgv error" & ex.Message)
-        End Try
-        Return True
-    End Function
+    'minimized btn
+    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
 End Class
+

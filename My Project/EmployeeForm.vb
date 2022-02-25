@@ -20,7 +20,7 @@ Public Class EmployeeForm
 
             Select Case mybtn.Name
                 Case "btnDashboard"
-                    TabControl1.SelectedTab = HomeEMP
+                    TabControl1.SelectedTab = updateEMP
                 Case "btnUpdateemp"
                     TabControl1.SelectedTab = updateEMP
                 Case "btnChangeemp"

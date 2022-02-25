@@ -24,8 +24,6 @@ Partial Class EmployeeForm
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.HomeEMP = New System.Windows.Forms.TabPage()
-        Me.lblHome = New System.Windows.Forms.Label()
         Me.updateEMP = New System.Windows.Forms.TabPage()
         Me.txbLnameEMP = New System.Windows.Forms.TextBox()
         Me.txbMnameEMP = New System.Windows.Forms.TextBox()
@@ -100,7 +98,6 @@ Partial Class EmployeeForm
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
-        Me.HomeEMP.SuspendLayout()
         Me.updateEMP.SuspendLayout()
         Me.ChangeEMP.SuspendLayout()
         Me.ApplyEMP.SuspendLayout()
@@ -109,7 +106,6 @@ Partial Class EmployeeForm
         '
         'TabControl1
         '
-        Me.TabControl1.Controls.Add(Me.HomeEMP)
         Me.TabControl1.Controls.Add(Me.updateEMP)
         Me.TabControl1.Controls.Add(Me.ChangeEMP)
         Me.TabControl1.Controls.Add(Me.ApplyEMP)
@@ -119,31 +115,6 @@ Partial Class EmployeeForm
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(601, 511)
         Me.TabControl1.TabIndex = 9
-        '
-        'HomeEMP
-        '
-        Me.HomeEMP.BackColor = System.Drawing.Color.Transparent
-        Me.HomeEMP.BackgroundImage = Global.EmployeeManagementSYSTEM.My.Resources.Resources.rec
-        Me.HomeEMP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.HomeEMP.Controls.Add(Me.lblHome)
-        Me.HomeEMP.Location = New System.Drawing.Point(4, 22)
-        Me.HomeEMP.Name = "HomeEMP"
-        Me.HomeEMP.Padding = New System.Windows.Forms.Padding(3)
-        Me.HomeEMP.Size = New System.Drawing.Size(593, 485)
-        Me.HomeEMP.TabIndex = 0
-        '
-        'lblHome
-        '
-        Me.lblHome.BackColor = System.Drawing.Color.Transparent
-        Me.lblHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.lblHome.Font = New System.Drawing.Font("Arial Rounded MT Bold", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHome.ForeColor = System.Drawing.Color.White
-        Me.lblHome.Location = New System.Drawing.Point(141, 15)
-        Me.lblHome.Name = "lblHome"
-        Me.lblHome.Size = New System.Drawing.Size(299, 55)
-        Me.lblHome.TabIndex = 14
-        Me.lblHome.Text = "HOME"
-        Me.lblHome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'updateEMP
         '
@@ -1138,7 +1109,6 @@ Partial Class EmployeeForm
         Me.Text = "EMPLOYEE DASHBOARD"
         Me.TransparencyKey = System.Drawing.SystemColors.ControlDarkDark
         Me.TabControl1.ResumeLayout(False)
-        Me.HomeEMP.ResumeLayout(False)
         Me.updateEMP.ResumeLayout(False)
         Me.updateEMP.PerformLayout()
         Me.ChangeEMP.ResumeLayout(False)
@@ -1151,8 +1121,6 @@ Partial Class EmployeeForm
     End Sub
 
     Friend WithEvents TabControl1 As TabControl
-    Friend WithEvents HomeEMP As TabPage
-    Friend WithEvents lblHome As Label
     Friend WithEvents updateEMP As TabPage
     Friend WithEvents Label7 As Label
     Friend WithEvents txbFnameEMP As TextBox

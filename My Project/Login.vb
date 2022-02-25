@@ -1,18 +1,22 @@
 Public Class Login
 
+    'Login Form Load
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
         usernamef.Padding = New Padding(0, 10, 0, 0)
     End Sub
 
+    'close btn
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles closeX.Click
         Me.Close()
     End Sub
 
+    'minimized btn
     Private Sub Label1_Click_1(sender As Object, e As EventArgs) Handles minimized.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
+    'Show password 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         If CheckBox1.Checked = True Then
             passwordf.PasswordChar = ""
@@ -21,6 +25,7 @@ Public Class Login
         End If
     End Sub
 
+    'Login redirect
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles loginfunc.Click
 
         Dim userclass As New Userclass
