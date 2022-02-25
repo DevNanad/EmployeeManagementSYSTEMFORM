@@ -377,7 +377,6 @@ Public Class Adminclass
             If sdr.Read Then
                 fullname = sdr("Fname") & " " & sdr("Lname")
                 adminsalary = sdr("salary")
-
             Else
 
             End If

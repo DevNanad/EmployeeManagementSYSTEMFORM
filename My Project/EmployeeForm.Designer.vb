@@ -53,12 +53,19 @@ Partial Class EmployeeForm
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.ApplyEMP = New System.Windows.Forms.TabPage()
+        Me.txbReasonLeave = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txbPlanLeave = New System.Windows.Forms.TextBox()
+        Me.btnApply = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.txbDaysLeave = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.ViewEMP = New System.Windows.Forms.TabPage()
-        Me.btnDeleteAdmin = New System.Windows.Forms.Button()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.txbDelete = New System.Windows.Forms.TextBox()
-        Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.closeX = New System.Windows.Forms.Label()
@@ -79,14 +86,19 @@ Partial Class EmployeeForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblDateemp = New System.Windows.Forms.Label()
         Me.emptimer = New System.Windows.Forms.Timer(Me.components)
-        Me.txbPlanLeave = New System.Windows.Forms.TextBox()
-        Me.btnApply = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.txbDaysLeave = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txbReasonLeave = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.lblBasicSalary = New System.Windows.Forms.Label()
+        Me.lblDeduction = New System.Windows.Forms.Label()
+        Me.lblSSS = New System.Windows.Forms.Label()
+        Me.lblPhilhealth = New System.Windows.Forms.Label()
+        Me.lblPagibig = New System.Windows.Forms.Label()
+        Me.lblTax = New System.Windows.Forms.Label()
+        Me.lblTotal = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.HomeEMP.SuspendLayout()
         Me.updateEMP.SuspendLayout()
@@ -496,6 +508,104 @@ Partial Class EmployeeForm
         Me.ApplyEMP.Text = "TabPage1"
         Me.ApplyEMP.UseVisualStyleBackColor = True
         '
+        'txbReasonLeave
+        '
+        Me.txbReasonLeave.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbReasonLeave.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txbReasonLeave.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbReasonLeave.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbReasonLeave.Location = New System.Drawing.Point(257, 146)
+        Me.txbReasonLeave.Multiline = True
+        Me.txbReasonLeave.Name = "txbReasonLeave"
+        Me.txbReasonLeave.Size = New System.Drawing.Size(230, 62)
+        Me.txbReasonLeave.TabIndex = 31
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(51, 142)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(161, 37)
+        Me.Label5.TabIndex = 30
+        Me.Label5.Text = "Reason for leave"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txbPlanLeave
+        '
+        Me.txbPlanLeave.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbPlanLeave.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txbPlanLeave.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbPlanLeave.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbPlanLeave.Location = New System.Drawing.Point(257, 289)
+        Me.txbPlanLeave.Multiline = True
+        Me.txbPlanLeave.Name = "txbPlanLeave"
+        Me.txbPlanLeave.Size = New System.Drawing.Size(230, 73)
+        Me.txbPlanLeave.TabIndex = 29
+        '
+        'btnApply
+        '
+        Me.btnApply.BackColor = System.Drawing.Color.Transparent
+        Me.btnApply.FlatAppearance.BorderSize = 2
+        Me.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnApply.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnApply.ForeColor = System.Drawing.Color.FloralWhite
+        Me.btnApply.Location = New System.Drawing.Point(237, 404)
+        Me.btnApply.Name = "btnApply"
+        Me.btnApply.Size = New System.Drawing.Size(124, 45)
+        Me.btnApply.TabIndex = 28
+        Me.btnApply.Text = "APPLY"
+        Me.btnApply.UseVisualStyleBackColor = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Panel2.Location = New System.Drawing.Point(259, 255)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(123, 3)
+        Me.Panel2.TabIndex = 26
+        '
+        'txbDaysLeave
+        '
+        Me.txbDaysLeave.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txbDaysLeave.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txbDaysLeave.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txbDaysLeave.ForeColor = System.Drawing.SystemColors.Info
+        Me.txbDaysLeave.Location = New System.Drawing.Point(257, 228)
+        Me.txbDaysLeave.Multiline = True
+        Me.txbDaysLeave.Name = "txbDaysLeave"
+        Me.txbDaysLeave.Size = New System.Drawing.Size(123, 27)
+        Me.txbDaysLeave.TabIndex = 25
+        '
+        'Label3
+        '
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(51, 296)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(164, 37)
+        Me.Label3.TabIndex = 24
+        Me.Label3.Text = "Current work plan"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label4.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(43, 224)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(161, 37)
+        Me.Label4.TabIndex = 23
+        Me.Label4.Text = "How many days"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Label17
         '
         Me.Label17.BackColor = System.Drawing.Color.Transparent
@@ -513,10 +623,22 @@ Partial Class EmployeeForm
         '
         Me.ViewEMP.BackgroundImage = Global.EmployeeManagementSYSTEM.My.Resources.Resources.rec
         Me.ViewEMP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ViewEMP.Controls.Add(Me.btnDeleteAdmin)
+        Me.ViewEMP.Controls.Add(Me.Label23)
+        Me.ViewEMP.Controls.Add(Me.lblTotal)
+        Me.ViewEMP.Controls.Add(Me.lblTax)
+        Me.ViewEMP.Controls.Add(Me.lblPagibig)
+        Me.ViewEMP.Controls.Add(Me.lblPhilhealth)
+        Me.ViewEMP.Controls.Add(Me.lblSSS)
+        Me.ViewEMP.Controls.Add(Me.lblDeduction)
+        Me.ViewEMP.Controls.Add(Me.lblBasicSalary)
+        Me.ViewEMP.Controls.Add(Me.Label22)
+        Me.ViewEMP.Controls.Add(Me.Label21)
+        Me.ViewEMP.Controls.Add(Me.Label20)
+        Me.ViewEMP.Controls.Add(Me.Label19)
+        Me.ViewEMP.Controls.Add(Me.Label18)
+        Me.ViewEMP.Controls.Add(Me.Label16)
+        Me.ViewEMP.Controls.Add(Me.Label6)
         Me.ViewEMP.Controls.Add(Me.Panel8)
-        Me.ViewEMP.Controls.Add(Me.txbDelete)
-        Me.ViewEMP.Controls.Add(Me.Label25)
         Me.ViewEMP.Controls.Add(Me.Label26)
         Me.ViewEMP.Location = New System.Drawing.Point(4, 22)
         Me.ViewEMP.Name = "ViewEMP"
@@ -525,53 +647,40 @@ Partial Class EmployeeForm
         Me.ViewEMP.Text = "TabPage1"
         Me.ViewEMP.UseVisualStyleBackColor = True
         '
-        'btnDeleteAdmin
+        'Label16
         '
-        Me.btnDeleteAdmin.BackColor = System.Drawing.Color.Transparent
-        Me.btnDeleteAdmin.FlatAppearance.BorderSize = 2
-        Me.btnDeleteAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDeleteAdmin.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDeleteAdmin.ForeColor = System.Drawing.Color.IndianRed
-        Me.btnDeleteAdmin.Location = New System.Drawing.Point(386, 252)
-        Me.btnDeleteAdmin.Name = "btnDeleteAdmin"
-        Me.btnDeleteAdmin.Size = New System.Drawing.Size(69, 33)
-        Me.btnDeleteAdmin.TabIndex = 43
-        Me.btnDeleteAdmin.Text = "DELETE"
-        Me.btnDeleteAdmin.UseVisualStyleBackColor = False
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label16.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(31, 188)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(89, 37)
+        Me.Label16.TabIndex = 44
+        Me.Label16.Text = "DEDUCTION"
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label6
+        '
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label6.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(31, 143)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(89, 37)
+        Me.Label6.TabIndex = 43
+        Me.Label6.Text = "Basic Salary"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.White
         Me.Panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel8.Location = New System.Drawing.Point(202, 276)
+        Me.Panel8.Location = New System.Drawing.Point(34, 410)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(139, 3)
+        Me.Panel8.Size = New System.Drawing.Size(510, 3)
         Me.Panel8.TabIndex = 42
-        '
-        'txbDelete
-        '
-        Me.txbDelete.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbDelete.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbDelete.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbDelete.Location = New System.Drawing.Point(202, 249)
-        Me.txbDelete.Multiline = True
-        Me.txbDelete.Name = "txbDelete"
-        Me.txbDelete.Size = New System.Drawing.Size(139, 28)
-        Me.txbDelete.TabIndex = 41
-        '
-        'Label25
-        '
-        Me.Label25.BackColor = System.Drawing.Color.Transparent
-        Me.Label25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label25.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.ForeColor = System.Drawing.Color.White
-        Me.Label25.Location = New System.Drawing.Point(60, 249)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(101, 37)
-        Me.Label25.TabIndex = 40
-        Me.Label25.Text = "Supply ID"
-        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label26
         '
@@ -583,7 +692,7 @@ Partial Class EmployeeForm
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(299, 55)
         Me.Label26.TabIndex = 39
-        Me.Label26.Text = "DELETE ACCOUNT"
+        Me.Label26.Text = "PAYSLIP"
         Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label2
@@ -826,103 +935,174 @@ Partial Class EmployeeForm
         'emptimer
         '
         '
-        'txbPlanLeave
+        'Label18
         '
-        Me.txbPlanLeave.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbPlanLeave.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txbPlanLeave.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbPlanLeave.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbPlanLeave.Location = New System.Drawing.Point(257, 289)
-        Me.txbPlanLeave.Multiline = True
-        Me.txbPlanLeave.Name = "txbPlanLeave"
-        Me.txbPlanLeave.Size = New System.Drawing.Size(230, 73)
-        Me.txbPlanLeave.TabIndex = 29
+        Me.Label18.BackColor = System.Drawing.Color.Transparent
+        Me.Label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label18.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.White
+        Me.Label18.Location = New System.Drawing.Point(31, 236)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(46, 37)
+        Me.Label18.TabIndex = 45
+        Me.Label18.Text = "SSS"
+        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'btnApply
+        'Label19
         '
-        Me.btnApply.BackColor = System.Drawing.Color.Transparent
-        Me.btnApply.FlatAppearance.BorderSize = 2
-        Me.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnApply.Font = New System.Drawing.Font("Arial Rounded MT Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnApply.ForeColor = System.Drawing.Color.FloralWhite
-        Me.btnApply.Location = New System.Drawing.Point(237, 404)
-        Me.btnApply.Name = "btnApply"
-        Me.btnApply.Size = New System.Drawing.Size(124, 45)
-        Me.btnApply.TabIndex = 28
-        Me.btnApply.Text = "APPLY"
-        Me.btnApply.UseVisualStyleBackColor = False
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
+        Me.Label19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label19.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.ForeColor = System.Drawing.Color.White
+        Me.Label19.Location = New System.Drawing.Point(31, 283)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(89, 37)
+        Me.Label19.TabIndex = 46
+        Me.Label19.Text = "PhilHealth"
+        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Panel2
+        'Label20
         '
-        Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Panel2.Location = New System.Drawing.Point(259, 255)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(123, 3)
-        Me.Panel2.TabIndex = 26
+        Me.Label20.BackColor = System.Drawing.Color.Transparent
+        Me.Label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label20.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.White
+        Me.Label20.Location = New System.Drawing.Point(31, 327)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(89, 37)
+        Me.Label20.TabIndex = 47
+        Me.Label20.Text = "Pag-Ibig"
+        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'txbDaysLeave
+        'Label21
         '
-        Me.txbDaysLeave.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbDaysLeave.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txbDaysLeave.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbDaysLeave.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbDaysLeave.Location = New System.Drawing.Point(257, 228)
-        Me.txbDaysLeave.Multiline = True
-        Me.txbDaysLeave.Name = "txbDaysLeave"
-        Me.txbDaysLeave.Size = New System.Drawing.Size(123, 27)
-        Me.txbDaysLeave.TabIndex = 25
+        Me.Label21.BackColor = System.Drawing.Color.Transparent
+        Me.Label21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label21.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.ForeColor = System.Drawing.Color.White
+        Me.Label21.Location = New System.Drawing.Point(31, 374)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(42, 37)
+        Me.Label21.TabIndex = 48
+        Me.Label21.Text = "Tax"
+        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label3
+        'Label22
         '
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(51, 296)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(164, 37)
-        Me.Label3.TabIndex = 24
-        Me.Label3.Text = "Current work plan"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label22.BackColor = System.Drawing.Color.Transparent
+        Me.Label22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label22.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.ForeColor = System.Drawing.Color.White
+        Me.Label22.Location = New System.Drawing.Point(31, 417)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(76, 37)
+        Me.Label22.TabIndex = 49
+        Me.Label22.Text = "Total Salary"
+        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label4
+        'lblBasicSalary
         '
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label4.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(43, 224)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(161, 37)
-        Me.Label4.TabIndex = 23
-        Me.Label4.Text = "How many days"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblBasicSalary.BackColor = System.Drawing.Color.Transparent
+        Me.lblBasicSalary.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblBasicSalary.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBasicSalary.ForeColor = System.Drawing.Color.White
+        Me.lblBasicSalary.Location = New System.Drawing.Point(455, 143)
+        Me.lblBasicSalary.Name = "lblBasicSalary"
+        Me.lblBasicSalary.Size = New System.Drawing.Size(89, 37)
+        Me.lblBasicSalary.TabIndex = 50
+        Me.lblBasicSalary.Text = "Basic Salary"
+        Me.lblBasicSalary.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'txbReasonLeave
+        'lblDeduction
         '
-        Me.txbReasonLeave.BackColor = System.Drawing.Color.FromArgb(CType(CType(147, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.txbReasonLeave.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txbReasonLeave.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txbReasonLeave.ForeColor = System.Drawing.SystemColors.Info
-        Me.txbReasonLeave.Location = New System.Drawing.Point(257, 146)
-        Me.txbReasonLeave.Multiline = True
-        Me.txbReasonLeave.Name = "txbReasonLeave"
-        Me.txbReasonLeave.Size = New System.Drawing.Size(230, 62)
-        Me.txbReasonLeave.TabIndex = 31
+        Me.lblDeduction.BackColor = System.Drawing.Color.Transparent
+        Me.lblDeduction.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblDeduction.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDeduction.ForeColor = System.Drawing.Color.Red
+        Me.lblDeduction.Location = New System.Drawing.Point(455, 188)
+        Me.lblDeduction.Name = "lblDeduction"
+        Me.lblDeduction.Size = New System.Drawing.Size(89, 37)
+        Me.lblDeduction.TabIndex = 51
+        Me.lblDeduction.Text = "Deduction"
+        Me.lblDeduction.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label5
+        'lblSSS
         '
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(51, 142)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(161, 37)
-        Me.Label5.TabIndex = 30
-        Me.Label5.Text = "Reason for leave"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lblSSS.BackColor = System.Drawing.Color.Transparent
+        Me.lblSSS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblSSS.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSSS.ForeColor = System.Drawing.Color.White
+        Me.lblSSS.Location = New System.Drawing.Point(455, 236)
+        Me.lblSSS.Name = "lblSSS"
+        Me.lblSSS.Size = New System.Drawing.Size(89, 37)
+        Me.lblSSS.TabIndex = 52
+        Me.lblSSS.Text = "SSS"
+        Me.lblSSS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblPhilhealth
+        '
+        Me.lblPhilhealth.BackColor = System.Drawing.Color.Transparent
+        Me.lblPhilhealth.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblPhilhealth.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPhilhealth.ForeColor = System.Drawing.Color.White
+        Me.lblPhilhealth.Location = New System.Drawing.Point(455, 283)
+        Me.lblPhilhealth.Name = "lblPhilhealth"
+        Me.lblPhilhealth.Size = New System.Drawing.Size(89, 37)
+        Me.lblPhilhealth.TabIndex = 53
+        Me.lblPhilhealth.Text = "Phil Health"
+        Me.lblPhilhealth.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblPagibig
+        '
+        Me.lblPagibig.BackColor = System.Drawing.Color.Transparent
+        Me.lblPagibig.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblPagibig.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPagibig.ForeColor = System.Drawing.Color.White
+        Me.lblPagibig.Location = New System.Drawing.Point(455, 327)
+        Me.lblPagibig.Name = "lblPagibig"
+        Me.lblPagibig.Size = New System.Drawing.Size(89, 37)
+        Me.lblPagibig.TabIndex = 54
+        Me.lblPagibig.Text = "Pagibig"
+        Me.lblPagibig.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblTax
+        '
+        Me.lblTax.BackColor = System.Drawing.Color.Transparent
+        Me.lblTax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblTax.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTax.ForeColor = System.Drawing.Color.White
+        Me.lblTax.Location = New System.Drawing.Point(455, 374)
+        Me.lblTax.Name = "lblTax"
+        Me.lblTax.Size = New System.Drawing.Size(89, 37)
+        Me.lblTax.TabIndex = 55
+        Me.lblTax.Text = "Tax"
+        Me.lblTax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblTotal
+        '
+        Me.lblTotal.BackColor = System.Drawing.Color.Transparent
+        Me.lblTotal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblTotal.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotal.ForeColor = System.Drawing.Color.Navy
+        Me.lblTotal.Location = New System.Drawing.Point(455, 417)
+        Me.lblTotal.Name = "lblTotal"
+        Me.lblTotal.Size = New System.Drawing.Size(89, 37)
+        Me.lblTotal.TabIndex = 56
+        Me.lblTotal.Text = "Total"
+        Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label23
+        '
+        Me.Label23.BackColor = System.Drawing.Color.Transparent
+        Me.Label23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label23.Font = New System.Drawing.Font("Bahnschrift", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.ForeColor = System.Drawing.Color.IndianRed
+        Me.Label23.Location = New System.Drawing.Point(404, 74)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(140, 37)
+        Me.Label23.TabIndex = 57
+        Me.Label23.Text = "1 Month Salary Period"
+        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'EmployeeForm
         '
@@ -966,7 +1146,6 @@ Partial Class EmployeeForm
         Me.ApplyEMP.ResumeLayout(False)
         Me.ApplyEMP.PerformLayout()
         Me.ViewEMP.ResumeLayout(False)
-        Me.ViewEMP.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -989,10 +1168,7 @@ Partial Class EmployeeForm
     Friend WithEvents ApplyEMP As TabPage
     Friend WithEvents Label17 As Label
     Friend WithEvents ViewEMP As TabPage
-    Friend WithEvents btnDeleteAdmin As Button
     Friend WithEvents Panel8 As Panel
-    Friend WithEvents txbDelete As TextBox
-    Friend WithEvents Label25 As Label
     Friend WithEvents Label26 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents closeX As Label
@@ -1035,4 +1211,19 @@ Partial Class EmployeeForm
     Friend WithEvents txbDaysLeave As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label23 As Label
+    Friend WithEvents lblTotal As Label
+    Friend WithEvents lblTax As Label
+    Friend WithEvents lblPagibig As Label
+    Friend WithEvents lblPhilhealth As Label
+    Friend WithEvents lblSSS As Label
+    Friend WithEvents lblDeduction As Label
+    Friend WithEvents lblBasicSalary As Label
+    Friend WithEvents Label22 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label18 As Label
 End Class
